@@ -1,0 +1,30 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: thcardos <thcardos@student.42malaga.c      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/18 20:06:27 by thcardos          #+#    #+#             */
+/*   Updated: 2025/11/18 20:06:30 by thcardos         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+void    *ft_memcpy(void *dest, const void *src, size_t n)
+{
+    unsigned char   *a;
+    unsigned char   *b;
+    size_t  i;
+
+    a = (unsigned char*)dest;
+    b = (unsigned char*)src;
+    i = 0;
+    while (i < n)
+    {
+        a[i] = b[i];
+        i++;
+    }
+    return (dest);
+}

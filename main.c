@@ -56,3 +56,16 @@ int main(void)
     return (0);
 } 
 */
+//STRLCPY
+
+int	main(void)
+{
+	char	*src = "Stardew Valley";
+	char	dest[30];
+	unsigned int	size = 7;
+	printf("Src is %s \n", src);
+	ft_strlcpy(dest, src, size);
+	printf("Dest is %s \n", dest);
+	printf("Src is %i characters long", ft_strlen(src));
+	return(0);
+}

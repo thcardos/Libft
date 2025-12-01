@@ -42,7 +42,6 @@ int main(void)
 }
 */
 
-
 //MEMMOVE
 /*
 
@@ -58,7 +57,7 @@ int main(void)
 */
 //STRLCPY
 
-int	main(void)
+/*int	main(void)
 {
 	char	*src = "Stardew Valley";
 	char	dest[30];
@@ -68,4 +67,4 @@ int	main(void)
 	printf("Dest is %s \n", dest);
 	printf("Src is %i characters long", ft_strlen(src));
 	return(0);
-}
+}*/

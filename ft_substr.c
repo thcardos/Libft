@@ -1,30 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thcardos <thcardos@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: thcardos <thcardos@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/01 18:11:11 by thcardos          #+#    #+#             */
-/*   Updated: 2025/12/01 18:34:14 by thcardos         ###   ########.fr       */
+/*   Created: 2025/12/03 15:33:00 by thcardos          #+#    #+#             */
+/*   Updated: 2025/12/03 15:33:03 by thcardos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t nmemb, size_t size)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*a;
-	size_t	total;
+    size_t  oglen;
+    size_t sublen;
+    size_t  a;
 
-	if (nmemb == 0 || size == 0)
-		return (malloc(0));
-	if (size != 0 && nmemb > (size_t)-1 / size)
+    oglen = ft_strlen(s);
+    a = oglen - start;
+    sublen = 0;
+	if (!s)
 		return (NULL);
-	total = nmemb * size;
-	a = malloc(total);
-	if (!a)
-		return (NULL);
-	ft_bzero(a, total);
-	return (a);
+    if (start >= oglen)
+        return (ft_strdup(""));
+    if (len <)
 }

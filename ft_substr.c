@@ -14,16 +14,29 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-    size_t  oglen;
-    size_t sublen;
-    size_t  a;
+	char	*substr;
+	size_t	len_to_copy;
+	size_t	s_len;
+	size_t	i;
 
-    oglen = ft_strlen(s);
-    a = oglen - start;
-    sublen = 0;
 	if (!s)
 		return (NULL);
-    if (start >= oglen)
-        return (ft_strdup(""));
-    if (len <)
+	s_len = ft_strlen(s);
+	if (start >= s_len)
+		return (ft_strdup(""));
+	if (len < (s_len - start))
+		len_to_copy = len;
+	else
+		len_to_copy = (s_len - start);
+	substr = malloc(len_to_copy + 1);
+	if (!substr)
+		return (NULL);
+	i = 0;
+	while (i < len_to_copy)
+	{
+		substr[i] = s[start + i];
+		i++;
+	}
+	substr[i] = '\0';
+	return (substr);
 }

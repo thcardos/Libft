@@ -27,6 +27,7 @@ SOURCES = ft_isalpha.c \
 		ft_calloc.c \
 		ft_strdup.c \
 		ft_substr.c \
+		ft_strjoin.c \
 
 OBJECTS = $(SOURCES:.c=.o)
 

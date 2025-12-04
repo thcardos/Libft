@@ -250,3 +250,33 @@
     free(str);
     return 0;
 }*/
+
+//CALLOC (lo del NULL)
+int	main(void)
+{
+    void	*ptr;
+
+    printf("Test: ft_calloc(0, 10)\n");
+    ptr = ft_calloc(0, 10);
+    
+    if (ptr == NULL)
+        printf("Returned NULL\n");
+    else
+    {
+        printf("Returned a valid pointer: %p\n", ptr);
+        free(ptr);
+    }
+
+    printf("Test: ft_calloc(5, 10)\n");
+    ptr = ft_calloc(5, 10);
+    
+    if (ptr == NULL)
+        printf("Error\n");
+    else
+    {
+        printf("Valid pointer: %p\n", ptr);
+        free(ptr);
+    }
+
+    return (0);
+}

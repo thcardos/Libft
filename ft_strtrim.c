@@ -1,40 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: thcardos <thcardos@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/04 19:57:57 by thcardos          #+#    #+#             */
-/*   Updated: 2025/12/04 19:58:01 by thcardos         ###   ########.fr       */
+/*   Created: 2025/12/09 15:26:36 by thcardos          #+#    #+#             */
+/*   Updated: 2025/12/09 15:26:41 by thcardos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*s3;
-	size_t	both_len;
-	size_t	i;
+	char	*str_new;
+	size_t	start;
+	size_t	finish;
+	size_t	size;
 
-	if (!s1 || !s2)
+	if (!s1 || !set)
 		return (NULL);
-	both_len = (ft_strlen(s1) + ft_strlen(s2));
-	s3 = malloc(both_len + 1);
-	if (!s3)
+	start = 0;
+	while (s1[start] && ft_strchr(set, s1[start]))
+		start++;
+	finish = ft_strlen(s1);
+	while (finish > start && ft_strchr(set, s1[finish - 1]))
+		finish--;
+	size = finish - start;
+	str_new = malloc(size + 1);
+	if (!str_new)
 		return (NULL);
-	i = 0;
-	while (i < ft_strlen(s1))
-	{
-		s3[i] = s1[0 + i];
-		i++;
-	}
-	while ((i - ft_strlen(s1)) < ft_strlen(s2))
-	{
-		s3[i] = s2[i - ft_strlen(s1)];
-		i++;
-	}
-	s3[ft_strlen(s1) + ft_strlen(s2)] = '\0';
-	return (s3);
+	ft_strlcpy(str_new, &s1[start], size + 1);
+	return (str_new);
 }

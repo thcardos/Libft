@@ -252,7 +252,7 @@
 }*/
 
 //CALLOC (lo del NULL)
-int	main(void)
+/*int	main(void)
 {
     void	*ptr;
 
@@ -279,4 +279,37 @@ int	main(void)
     }
 
     return (0);
-}
+}*/
+//STRDUP
+/*int main(void)
+{
+    char *s1 = "Hello, World!";
+    char *dup;
+    dup = ft_strdup(s1);
+    printf("Original: %s\n", s1);
+    printf("Duplicate: %s\n", dup);
+    free(dup);
+    return 0;
+}*/
+//STRJOIN
+/*int main(void)
+{
+    char *s1 = "Hello, ";
+    char *s2 = "World!";
+    char *joined;
+    joined = ft_strjoin(s1, s2);
+    printf("Joined String: %s\n", joined);
+    free(joined);
+    return 0;
+}*/
+//STRTRIM
+/*int main(void)
+{
+    char *s1 = "  Hello, World!  ";
+    char *set = " ";
+    char *trimmed;
+    trimmed = ft_strtrim(s1, set);
+    printf("Trimmed String: '%s'\n", trimmed);
+    free(trimmed);
+    return 0;
+}*/

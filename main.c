@@ -16,7 +16,8 @@
 #include <unistd.h>
 
 // ISALPHA
-/*int main(void)
+/*
+int main(void)
 {
 	char c;
 
@@ -24,9 +25,11 @@
 	printf("ft_isalpha('%c') = %d\n", c, ft_isalpha(c));
 
 	return (0);
-}*/
+}
+*/
 // ISDIGIT
-/*int main(void)
+/*
+int main(void)
 {
 	char c;
 
@@ -34,9 +37,11 @@
 	printf("ft_isdigit('%c') = %d\n", c, ft_isdigit(c));
 
 	return (0);
-}*/
+}
+*/
 // ISALNUM
-/*int main(void)
+/*
+int main(void)
 {
 	char c;
 
@@ -44,9 +49,11 @@
 	printf("ft_isalnum('%c') = %d\n", c, ft_isalnum(c));
 
 	return (0);
-}*/
+}
+*/
 // ISASCII
-/*int main(void)
+/*
+int main(void)
 {
 	int c;
 
@@ -54,9 +61,11 @@
 	printf("ft_isascii(%d) = %d\n", c, ft_isascii(c));
 
 	return (0);
-}*/
+}
+*/
 // ISPRINT
-/*int main(void)
+/*
+int main(void)
 {
 	int c;
 
@@ -64,9 +73,11 @@
 	printf("ft_isprint(%d) = %d\n", c, ft_isprint(c));
 
 	return (0);
-}*/
+}
+*/
 // STRLEN
-/*int main(void)
+/*
+int main(void)
 {
 	char *s;
 
@@ -74,9 +85,11 @@
 	printf("ft_strlen(\"%s\") = %zu\n", s, ft_strlen(s));
 
 	return (0);
-}*/
+}
+*/
 // MEMSET
-/*int main(void)
+/*
+int main(void)
 {
 	char    og[10] = "Socorro";
 	ft_memset(og, 'O', 4);
@@ -85,9 +98,11 @@
 	//crea una cadena "Socorro".
 	//cambia los primeros 4 caracteres por "O"
 	//imprime XXXXrro
-}*/
+}
+*/
 // BZERO
-/*int main(void)
+/*
+int main(void)
 {
 	char str[10] = "Hello";
 
@@ -96,9 +111,11 @@
 	printf("After bzero(3): \"%s\" (length: %zu)\n", str, strlen(str));
 
 	return (0);
-}*/
+}
+*/
 // MEMCPY
-/*int main(void)
+/*
+int main(void)
 {
 	char src[10] = "hola";
 	char dest[10] = "";
@@ -106,10 +123,11 @@
 	ft_memcpy(dest, src, 4);
 	printf("%s\n", dest);
 	return (0);
-}*/
-
+}
+*/
 // MEMMOVE
-/*int main(void)
+/*
+int main(void)
 {
 	char b[10] = "hello";
 
@@ -117,9 +135,11 @@
 	write(1, b, 6);
 	write(1, "\n", 1);
 	return (0);
-}*/
+}
+*/
 // STRLCPY
-/*int	main(void)
+/*
+int	main(void)
 {
 	char	*source= "Stardew Valley";
 	char	buffer[8];
@@ -128,9 +148,11 @@
 	printf("Dest is %s \n", buffer);
 	printf("Src is %zu characters long", cpy);
 	return(0);
-}*/
+}
+*/
 // STRLCAT
-/*int main(void)
+/*
+int main(void)
 {
 	char dst[20] = "Stardew";
 	size_t result;
@@ -139,9 +161,11 @@
 	printf("Result: %zu, String: \"%s\"\n", result, dst);
 
 	return (0);
-}*/
+}
+*/
 // TOUPPER
-/*int main(void)
+/*
+int main(void)
 {
 	char c;
 
@@ -149,9 +173,11 @@
 	printf("ft_toupper('%c') = '%c'\n", c, ft_toupper(c));
 
 	return (0);
-}*/
+}
+*/
 // TOLOWER
-/*int main(void)
+/*
+int main(void)
 {
 	char c;
 
@@ -159,9 +185,11 @@
 	printf("ft_tolower('%c') = '%c'\n", c, ft_tolower(c));
 
 	return (0);
-}*/
+}
+*/
 // STRCHR
-/*int main(void)
+/*
+int main(void)
 {
 	char *str = "Hello World";
 	char *result;
@@ -170,9 +198,11 @@
 	printf("ft_strchr(\"%s\", 'o') = \"%s\"\n", str, result);
 
 	return (0);
-}*/
+}
+*/
 // STRRCHR
-/*int main(void)
+/*
+int main(void)
 {
 	char *str = "Hello World";
 	char *result;
@@ -181,9 +211,11 @@
 	printf("ft_strrchr(\"%s\", 'l') = \"%s\"\n", str, result);
 
 	return (0);
-}*/
+}
+*/
 // STRNCMP
-/*int main(void)
+/*
+int main(void)
 {
 	char *s1 = "Hello";
 	char *s2 = "Hello";
@@ -193,9 +225,11 @@
 	printf("ft_strncmp(\"%s\", \"%s\") = %d\n", s1, s2, result);
 
 	return (0);
-}*/
+}
+*/
 // MEMCHR
-/*int main(void)
+/*
+int main(void)
 {
 	char *str = "Hello World";
 	char *result;
@@ -204,9 +238,11 @@
 	printf("\"%s\" = \"%s\"\n", str, result);
 
 	return (0);
-}*/
+}
+*/
 // MEMCMP
-/*int main(void)
+/*
+int main(void)
 {
 	char *s1 = "Hello";
 	char *s2 = "Hello";
@@ -214,9 +250,11 @@
 	printf("\"%s\" - \"%s\" = %d\n", s1, s2, ft_memcmp(s1, s2, 5));
 
 	return (0);
-}*/
+}
+*/
 // STRNSTR
-/*int main(void)
+/*
+int main(void)
 {
 	char *haystack = "Hello World";
 	char *needle = "o";
@@ -226,9 +264,11 @@
 	printf("\"%s\", \"%s\" = \"%s\"\n", haystack, needle, result);
 
 	return (0);
-}*/
+}
+*/
 // ATOI
-/*int main(void)
+/*
+int main(void)
 {
 	char *str;
 
@@ -236,9 +276,11 @@
 	printf("\"%s\" = %d\n", str, ft_atoi(str));
 
 	return 0;
-}*/
+}
+*/
 // CALLOC
-/*int main(void)
+/*
+int main(void)
 {
 	char *str;
 
@@ -248,10 +290,12 @@
 
 	free(str);
 	return 0;
-}*/
+}
+*/
 
 // CALLOC (lo del NULL)
-/*int	main(void)
+/*
+int	main(void)
 {
 	void	*ptr;
 
@@ -278,9 +322,11 @@
 	}
 
 	return (0);
-}*/
+}
+*/
 // STRDUP
-/*int main(void)
+/*
+int main(void)
 {
 	char *s1 = "Hello, World!";
 	char *dup;
@@ -289,9 +335,11 @@
 	printf("Duplicate: %s\n", dup);
 	free(dup);
 	return 0;
-}*/
+}
+*/
 // STRJOIN
-/*int main(void)
+/*
+int main(void)
 {
 	char *s1 = "Hello, ";
 	char *s2 = "World!";
@@ -300,9 +348,11 @@
 	printf("Joined String: %s\n", joined);
 	free(joined);
 	return 0;
-}*/
+}
+*/
 // STRTRIM
-/*int main(void)
+/*
+int main(void)
 {
 	char *s1 = "  Hello, World!  ";
 	char *set = " ";
@@ -311,26 +361,37 @@
 	printf("Trimmed String: '%s'\n", trimmed);
 	free(trimmed);
 	return 0;
-}*/
+}
+*/
 // SPLIT
-/*int main(void)
+/*
+int main(void)
 {
-	char **result;
-	size_t i;
+    char	**result;
+    int		i;
 
-	result = ft_split(",,Hola,,,,mundo,adios", ',');
-	if (!result)
-	{
-		printf("ft_split returned NULL\n");
-		return 1;
-	}
-	i = 0;
-	while (result[i])
-	{
-		printf("result[%zu]: '%s'\n", i, result[i]);
-		free(result[i]);
-		i++;
-	}
-	free(result);
-	return 0;
-}*/
+    result = ft_split("hola,mundo,test", ',');
+    i = 0;
+    while (result && result[i])
+    {
+        printf("result[%d] = \"%s\"\n", i, result[i]);
+        i++;
+    }
+    return (0);
+}
+*/
+// ITOA
+/*
+int main(void)
+{
+	int     num;
+	char    *str;
+	num = -12345678;
+	str = ft_itoa(num);
+	printf("ft_itoa(%d) = \"%s\"\n", num, str);
+	return (0);
+}
+*/
+//STRMAPI
+
+

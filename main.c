@@ -393,25 +393,41 @@ int main(void)
 }
 */
 //STRMAPI
-char	*ft_strupcase(char *str)
+/*
+char	ft_upper(unsigned int i, char c)
 {
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (str[i] >= 'a' && str[i] <= 'z')
-		{
-			str[i] -= 32;
-		}
-		i++;
-	}
-	return (str);
+	(void)i;
+    if (c >= 'a' && c <= 'z')
+        return (c - 32);
+    return (c);
 }
 int main(void)
 {
-	char *new = ft_strmapi("holiwis", ft_strupcase);
-	printf("Resulting String: '%s'\n", new);
+	char *a;
+	a = "h0l iwis";
+	char *new = ft_strmapi(a, ft_upper);
+	printf("Original String: %s\n", a);
+	printf("Resulting String: %s\n", new);
 	free(new);
 	return 0;
 }
+*/
+//STRITERI
+/*
+void	ft_upper_test(unsigned int i, char *c)
+{
+	(void)i;
+	if (*c >= 'a' && *c <= 'z')
+		*c -= 32;
+}
+
+int main(void)
+{
+	char str[] = "holiwis 123";
+	
+	printf("Original String: %s\n", str);
+	ft_striteri(str, ft_upper_test);
+	printf("Resulting String: %s\n", str);
+	return (0);
+}
+*/

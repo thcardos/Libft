@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thcardos <thcardos@student.42malaga.c      +#+  +:+       +#+        */
+/*   By: thcardos <thcardos@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/03 15:33:00 by thcardos          #+#    #+#             */
 /*   Updated: 2025/12/04 16:37:03 by thcardos         ###   ########.fr       */

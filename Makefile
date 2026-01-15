@@ -42,6 +42,7 @@ SOURCES = ft_isalpha.c \
 OBJECTS = $(SOURCES:.c=.o)
 
 BONUS =	ft_lstnew.c \
+		ft_lstadd_front.c \
 		
 BONUS_OBJS = $(BONUS:.c=.o)
 

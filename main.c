@@ -431,3 +431,31 @@ int main(void)
 	return (0);
 }
 */
+//LSTNEW
+int main(void)
+{
+	t_list	*node1;
+	t_list	*node2;
+	char	*str = "Hola Mundo";
+	int		num = 42;
+
+	node1 = ft_lstnew(str);
+	printf("Test 1 - String node:\n");
+	printf("Content: %s\n", (char *)node1->content);
+	printf("Next: %p\n", (void *)node1->next);
+	
+	node2 = ft_lstnew(&num);
+	printf("Test 2 - Int node:\n");
+	printf("Content: %d\n", *(int *)node2->content);
+	printf("Next: %p\n", (void *)node2->next);
+	
+	t_list *node3 = ft_lstnew(NULL);
+	printf("Test 3 - NULL content:\n");
+	printf("Content: %p\n", node3->content);
+	printf("Next: %p\n", (void *)node3->next);
+	
+	free(node1);
+	free(node2);
+	free(node3);
+	return (0);
+}

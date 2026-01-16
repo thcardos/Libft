@@ -436,7 +436,7 @@ int main(void)
 int main(void)
 {
 	t_list	*node_new;
-	char	*str = "Hola Mundo";
+	char	*str = "Hola Mundo Adios";
 
 	node_new = ft_lstnew(str);
 	printf("Content: %s\n", (char *)node_new->content);
@@ -446,3 +446,69 @@ int main(void)
 	return (0);
 }
 */
+//LSTADDFRONT
+/*
+int main(void)
+{
+    t_list	*list;
+    t_list	*node1;
+    t_list	*node2;
+    t_list	*node3;
+    t_list	*current;
+    
+    list = NULL;
+    
+    node1 = ft_lstnew("Hola");
+    node2 = ft_lstnew("Mundo");
+    node3 = ft_lstnew("Adios");
+    
+    ft_lstadd_front(&list, node1);
+    ft_lstadd_front(&list, node2);
+    ft_lstadd_front(&list, node3);
+    
+    printf("List:\n");
+    current = list;
+    while (current)
+    {
+        printf("- %s\n", (char *)current->content);
+        current = current->next;
+    }
+    
+    free(node1);
+    free(node2);
+    free(node3);
+    
+    return (0);
+}
+*/
+
+//LSTSIZE
+/*
+int main(void)
+{
+    t_list *list = NULL;
+    t_list *node1;
+    t_list *node2;
+    t_list *node3;
+
+    printf("Starting list -> size: %d\n", ft_lstsize(list));
+
+    node1 = ft_lstnew("Hola");
+    node2 = ft_lstnew("Mundo");
+    node3 = ft_lstnew("Adios");
+
+    ft_lstadd_front(&list, node1);
+	printf("List with 1 nodes -> size: %d\n", ft_lstsize(list));
+    ft_lstadd_front(&list, node2);
+	printf("List with 2 nodes -> size: %d\n", ft_lstsize(list));
+    ft_lstadd_front(&list, node3);
+    printf("List with 3 nodes -> size: %d\n", ft_lstsize(list));
+    printf("Head content: %s\n", (char *)list->content);
+
+    free(node3);
+    free(node2);
+    free(node1);
+    return 0;
+}
+*/
+//

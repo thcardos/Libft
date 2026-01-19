@@ -38,16 +38,17 @@ SOURCES = ft_isalpha.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
 		ft_lstnew.c \
-
-OBJECTS = $(SOURCES:.c=.o)
-
-BONUS =	ft_lstnew.c \
+		ft_lstnew.c \
 		ft_lstadd_front.c \
 		ft_lstsize.c \
 		ft_lstlast.c \
 		ft_lstadd_back.c \
-		
-BONUS_OBJS = $(BONUS:.c=.o)
+		ft_lstdelone.c \
+		ft_lstclear.c \
+		ft_lstiter.c \
+		ft_lstmap.c \
+
+OBJECTS = $(SOURCES:.c=.o)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
@@ -65,8 +66,5 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-
-bonus: $(OBJS) $(BONUS_OBJS)
-	ar rc $(NAME) $(OBJS) $(BONUS_OBJS)
 
 .PHONY: all clean fclean re

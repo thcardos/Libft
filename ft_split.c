@@ -6,7 +6,7 @@
 /*   By: thcardos <thcardos@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/09 18:25:35 by thcardos          #+#    #+#             */
-/*   Updated: 2025/12/10 19:01:46 by thcardos         ###   ########.fr       */
+/*   Updated: 2026/01/19 15:46:16 by thcardos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,18 +35,25 @@ static size_t	word_count(char const *s, char c)
 	return (nbr_word);
 }
 
-char	**ft_split(char const *s, char c)
+static void	free_all(char **result, size_t count)
 {
-	char	**result;
+	size_t	i;
+
+	i = 0;
+	while (i < count)
+	{
+		free(result[i]);
+		i++;
+	}
+	free(result);
+}
+
+static char	**fill_array(char **result, char const *s, char c)
+{
 	size_t	i;
 	size_t	j;
 	size_t	start;
 
-	if (!s)
-		return (NULL);
-	result = malloc((word_count(s, c) + 1) * sizeof(char *));
-	if (!result)
-		return (NULL);
 	i = 0;
 	j = 0;
 	while (s[i])
@@ -57,8 +64,24 @@ char	**ft_split(char const *s, char c)
 		while (s[i] && s[i] != c)
 			i++;
 		if (i > start)
-			result[j++] = ft_substr(s, start, i - start);
+		{
+			result[j] = ft_substr(s, start, i - start);
+			if (!result[j])
+				return (free_all(result, j), NULL);
+			j++;
+		}
 	}
-	result[j] = NULL;
-	return (result);
+	return (result[j] = NULL, result);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**result;
+
+	if (!s)
+		return (NULL);
+	result = malloc((word_count(s, c) + 1) * sizeof(char *));
+	if (!result)
+		return (NULL);
+	return (fill_array(result, s, c));
 }

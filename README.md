@@ -1,5 +1,5 @@
 *Este proyecto ha sido creado como parte del currículo de 42 por thcardos.*
-
+# $\color{violet}{\textsf{lorem ipsum}}$
 # <code style="color : purple">Libft</code>
 
 ## <code style="color : purple">Description</code>

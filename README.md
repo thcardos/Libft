@@ -514,6 +514,7 @@ This will automatically detect:
 During the development of this project artificial intelligence has been used as a **learning support tool**, not as a shortcut. Similar to consulting a book or asking a classmate, AI has been used to:
 
 
+
 - Understand concepts that were not clear in the documentation.
 
 - Obtain guidance on what to study.
@@ -522,6 +523,9 @@ During the development of this project artificial intelligence has been used as 
 
 
 However, **the entire process of reasoning, implementation, and debugging has been manual**, ensuring the development of essential skills for the rest of the 42 curriculum and for taking exams without external dependencies.
+
+
+
 
 
 **Educational Use:**

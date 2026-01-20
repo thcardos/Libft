@@ -417,6 +417,7 @@ gcc -Wall -Wextra -Werror your_program.c -L. -lft -o program
 
 
 <sub>
+
 **Memory verification with Valgrind:**
 ```bash
 # Compile your program with the library

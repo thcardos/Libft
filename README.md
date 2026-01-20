@@ -501,7 +501,9 @@ This will automatically detect:
 
 **Use of AI**
 
+
 During the development of this project artificial intelligence has been used as a **learning support tool**, not as a shortcut. Similar to consulting a book or asking a classmate, AI has been used to:
+
 
 - Understand concepts that were not clear in the documentation.
 
@@ -509,20 +511,31 @@ During the development of this project artificial intelligence has been used as 
 
 - Improve the presentation of documentation.
 
+
 However, **the entire process of reasoning, implementation, and debugging has been manual**, ensuring the development of essential skills for the rest of the 42 curriculum and for taking exams without external dependencies.
+
 
 **Educational Use:**
 
+
 - **README Aesthetics:** Visual design, badges, markdown formatting, and documentation structure.
+
 - **Resource Guidance:** Advice on which resources, documentation, and tutorials to look for to learn specific concepts.
+
 - **Definitions for notes:** Creation of clear and concise definitions of programming concepts for my personal notes.
+
 - **Debugging tips:** Suggestions on debugging tools and methodologies (Valgrind, GDB, etc.)
+
 
 **Not used for:**
 
+
 - **Code generation:** All function code has been written manually without AI assistance.
+
 - **Exercise solving:** Algorithms and logic have been developed independently.
+
 - **Direct copying of solutions:** AI-generated answers have not been used to implement functions.
+
 
 <div align="center">
 

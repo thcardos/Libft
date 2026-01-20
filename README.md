@@ -22,10 +22,14 @@
 
 <sub>**Character Verification Functions**</sub>
 
-<sub>**`ft_isalpha`** </sub>
+<sub>**`ft_isalpha`** 
+</sub>
+
 <sub>- Checks if a character is alphabetic (a-z, A-Z)</sub>
+
 <sub>- Returns 1 if the character is a letter, 0 otherwise
 </sub>
+
 <sub>- Logic: Verifies if `c` is between 'a'-'z' or 'A'-'Z'
 </sub>
 

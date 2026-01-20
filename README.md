@@ -544,5 +544,3 @@ However, **the entire process of reasoning, implementation, and debugging has be
 - **Exercise solving:** Algorithms and logic have been developed independently.
 
 - **Direct copying of solutions:** AI-generated answers have not been used to implement functions.
-
-</div>

@@ -1,8 +1,8 @@
 *Este proyecto ha sido creado como parte del currículo de 42 por thcardos.*
-# $\color{violet}{\textsf{lorem ipsum}}$
-# <code style="color : purple">Libft</code>
 
-## <code style="color : purple">Description</code>
+# $\colorbox{lavender}{\color{violet}{\textsf{Libft}}}$
+
+## $\colorbox{lavender}{\color{violet}{\textsf{Description}}}$
 
 Libft es una biblioteca de funciones en C que recrea las funciones estándar de la biblioteca de C, además de incluir funciones adicionales útiles para futuros proyectos de 42. Este proyecto constituye el primer proyecto del currículo de 42 y tiene como objetivo familiarizarse con la programación en C, la gestión de memoria y las estructuras de datos básicas.
 

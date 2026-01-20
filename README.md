@@ -396,7 +396,7 @@ typedef struct s_list
 
 **Compilation with the library**
 ```bash
-gcc -Wall -Wextra -Werror your_program.c -L. -lft -o program
+cc -Wall -Wextra -Werror your_program.c libft.a -o program
 ```
 
 **Available commands**

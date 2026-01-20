@@ -508,19 +508,18 @@ This will automatically detect:
 
 - [Stack Overflow](https://stackoverflow.com/questions) - Community for resolving specific queries.
 
-**Use of AI**
+</sub>
+
+<sub>**Use of AI**</sub>
+
+<sub>During the development of this project artificial intelligence has been used as a **learning support tool**, not as a shortcut. Similar to consulting a book or asking a classmate, AI has been used to:</sub>
 
 
-During the development of this project artificial intelligence has been used as a **learning support tool**, not as a shortcut. Similar to consulting a book or asking a classmate, AI has been used to:
+<sub>- Understand concepts that were not clear in the documentation.</sub>
 
+<sub>- Obtain guidance on what to study.</sub>
 
-
-- Understand concepts that were not clear in the documentation.
-
-- Obtain guidance on what to study.
-
-- Improve the presentation of documentation.
-
+<sub>- Improve the presentation of documentation.</sub>
 
 However, **the entire process of reasoning, implementation, and debugging has been manual**, ensuring the development of essential skills for the rest of the 42 curriculum and for taking exams without external dependencies.
 

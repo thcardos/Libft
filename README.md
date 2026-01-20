@@ -521,29 +521,25 @@ This will automatically detect:
 
 <sub>- Improve the presentation of documentation.</sub>
 
-However, **the entire process of reasoning, implementation, and debugging has been manual**, ensuring the development of essential skills for the rest of the 42 curriculum and for taking exams without external dependencies.
+<sub>However, **the entire process of reasoning, implementation, and debugging has been manual**, ensuring the development of essential skills for the rest of the 42 curriculum and for taking exams without external dependencies.</sub>
+
+<sub>**Educational Use:**</sub>
 
 
+<sub>- **README Aesthetics:** Visual design, badges, markdown formatting, and documentation structure.</sub>
+
+<sub>- **Resource Guidance:** Advice on which resources, documentation, and tutorials to look for to learn specific concepts.</sub>
+
+</sub>- **Definitions for notes:** Creation of clear and concise definitions of programming concepts for my personal notes.
+
+<sub>- **Debugging tips:** Suggestions on debugging tools and methodologies (Valgrind, GDB, etc.)</sub>
 
 
-
-**Educational Use:**
-
-
-- **README Aesthetics:** Visual design, badges, markdown formatting, and documentation structure.
-
-- **Resource Guidance:** Advice on which resources, documentation, and tutorials to look for to learn specific concepts.
-
-- **Definitions for notes:** Creation of clear and concise definitions of programming concepts for my personal notes.
-
-- **Debugging tips:** Suggestions on debugging tools and methodologies (Valgrind, GDB, etc.)
+<sub>**Not used for:**</sub>
 
 
-**Not used for:**
+<sub>- **Code generation:** All function code has been written manually without AI assistance.
 
+<sub>- **Exercise solving:** Algorithms and logic have been developed independently.
 
-- **Code generation:** All function code has been written manually without AI assistance.
-
-- **Exercise solving:** Algorithms and logic have been developed independently.
-
-- **Direct copying of solutions:** AI-generated answers have not been used to implement functions.
+<sub>- **Direct copying of solutions:** AI-generated answers have not been used to implement functions.

@@ -197,7 +197,7 @@
 
 <sub>- Logic: Compares the first `n` bytes of `s1` and `s2` byte by byte</sub>
 
-#### **Conversion Functions**
+<sub>**Conversion Functions**</sub>
 
 <sub>**`ft_atoi`**</sub>
 
@@ -530,7 +530,7 @@ This will automatically detect:
 
 <sub>- **Resource Guidance:** Advice on which resources, documentation, and tutorials to look for to learn specific concepts.</sub>
 
-</sub>- **Definitions for notes:** Creation of clear and concise definitions of programming concepts for my personal notes.
+<sub>- **Definitions for notes:** Creation of clear and concise definitions of programming concepts for my personal notes.</sub>
 
 <sub>- **Debugging tips:** Suggestions on debugging tools and methodologies (Valgrind, GDB, etc.)</sub>
 

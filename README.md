@@ -321,6 +321,7 @@ typedef struct s_list
 }   t_list;
 ```
 <sub>**`ft_lstnew`**</sub>
+
 <sub>- Creates a new list node</sub>
 
 <sub>- Returns a pointer to the new node, or NULL if allocation fails</sub>
@@ -328,6 +329,7 @@ typedef struct s_list
 <sub>- Logic: Allocates memory for a new node, initializes `content` with the parameter, sets `next` to NULL</sub>
 
 <sub>**`ft_lstadd_front`**</sub>
+
 <sub>- Adds a node at the beginning of the list</sub>
 
 <sub>- No return value (void)</sub>
@@ -335,6 +337,7 @@ typedef struct s_list
 <sub>- Logic: Sets `new->next` to the current first node, updates the list head to point to `new`</sub>
 
 <sub>**`ft_lstadd_back`**</sub>
+
 <sub>- Adds a node at the end of the list</sub>
 
 <sub>- No return value (void)</sub>
@@ -342,6 +345,7 @@ typedef struct s_list
 <sub>- Logic: If list is empty, sets head to `new`; otherwise traverses to the last node and sets its `next` to `new`</sub>
 
 <sub>**`ft_lstsize`**</sub>
+
 <sub>- Counts the number of nodes in a list</sub>
 
 <sub>- Returns the number of nodes</sub>
@@ -349,11 +353,13 @@ typedef struct s_list
 <sub>- Logic: Traverses the list from head to tail, counting each node</sub>
 
 <sub>**`ft_lstlast`**</sub>
+
 <sub>- Returns the last node of the list</sub>
 <sub>- Returns a pointer to the last node, or NULL if list is empty</sub>
 <sub>- Logic: Traverses the list until finding a node whose `next` is NULL</sub>
 
 <sub>**`ft_lstdelone`**</sub>
+
 <sub>- Deletes a single node</sub>
 
 <sub>- No return value (void)</sub>
@@ -361,6 +367,7 @@ typedef struct s_list
 <sub>- Logic: Calls the `del` function on the node's content, then frees the node itself</sub>
 
 <sub>**`ft_lstclear`**</sub>
+
 <sub>- Deletes all nodes in the list</sub>
 
 <sub>- No return value (void)</sub>
@@ -368,6 +375,7 @@ typedef struct s_list
 <sub>- Logic: Iterates through the list, deleting each node with `ft_lstdelone` and sets the head to NULL</sub>
 
 <sub>**`ft_lstiter`**</sub>
+
 <sub>- Applies a function to each node's content</sub>
 
 <sub>- No return value (void)</sub>
@@ -375,6 +383,7 @@ typedef struct s_list
 <sub>- Logic: Traverses the list and applies function `f` to each node's content</sub>
 
 <sub>**`ft_lstmap`**</sub>
+
 <sub>- Creates a new list by applying a function to each node</sub>
 
 <sub>- Returns a pointer to the new list, or NULL if allocation fails</sub>
@@ -535,9 +544,5 @@ However, **the entire process of reasoning, implementation, and debugging has be
 - **Exercise solving:** Algorithms and logic have been developed independently.
 
 - **Direct copying of solutions:** AI-generated answers have not been used to implement functions.
-
-
-<div align="center">
-
 
 </div>

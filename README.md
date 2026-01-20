@@ -410,10 +410,9 @@ gcc -Wall -Wextra -Werror your_program.c -L. -lft -o program
 
 </sub>
 
-<sub>**Testing the functions:**
+<sub>**Testing the functions:**</sub>
 
-Here you have the [Main File](https://github.com/thcardos/Libft/blob/main/README.md) I have created to test my functions.
-
+<sub>Here you have the [Main File](https://github.com/thcardos/Libft/blob/main/README.md) I have created to test my functions.
 </sub>
 
 
